@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,900&display=swap');
 :root{
---main-color: #133f6f;
---highlight: #f0ad1c;
+--main-color: #292929;
+
+--highlight: #01b3f3;
+--highlight2: #01f6e4;
+	--highlight-grad:linear-gradient(to right, var(--highlight2), var(--highlight)) ;
+--darker: #292929;
 }
 *{
 -webkit-tap-highlight-color: transparent;
@@ -71,12 +75,13 @@ header .wrapper {
     -webkit-appearance: none;
     border: 0;
     font-size: 16px;
+	font-weight: 600;
     text-align: center;
     display: block;
-    background: var(--highlight);
+    background: var(--highlight-grad);
     color: #fff;
     border-radius: 25px;
-    box-shadow: 0 15px 20px -4px #f0ad1cbf;
+	box-shadow: 0 15px 20px -4px var(--highlight);
     padding: 10px 0;
     width: 250px;
     height: 42px;
@@ -89,7 +94,7 @@ header .wrapper {
 }
 
 .button:hover {
-	box-shadow: 0 0px 15px #ffc902;
+	box-shadow: 0 0px 15px var(--highlight2);
 }
 .logo {
 	width: 175px;
@@ -374,7 +379,7 @@ margin: 0px 0px 20px;
 	padding: 70px 20px;
 }
 footer {
-	background: #10345a;
+	background: var(--darker);
 	color: #fff;
 	height: 190px;
 	padding: 50px 30px;
@@ -552,6 +557,14 @@ footer a:visited {
     width: 50%;
     text-align: center;
 }
+.darker {
+	background: var(--darker);
+	color: #fff;
+}
+.darker h3 {
+	color: var(--highlight2);
+}
+
 
 
 /*CONTACT=========================*/
