@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coda:wght@800&family=Work+Sans:wght@900&display=swap');
+
 :root{
 --main-color: #292929;
-
 --highlight: #01b3f3;
 --highlight2: #01f6e4;
-	--highlight-grad:linear-gradient(to right, var(--highlight2), var(--highlight)) ;
---darker: #292929;
+--highlight-grad:linear-gradient(to right, var(--highlight2), var(--highlight)) ;
+--darker: #242424;
 }
 *{
 -webkit-tap-highlight-color: transparent;
@@ -14,7 +15,7 @@
     outline: none; 
 }
 
-html, body {
+body {
 	overflow-x: hidden;
 }
 body {
@@ -46,6 +47,11 @@ h3 {
 	text-transform: uppercase;
 	font-weight: 700;
 }
+h1,h2, h3 {
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+
+}
 
 .wrapper {
 	min-width: 980px;
@@ -60,7 +66,7 @@ header {
 	top: 0;
     height: 85px;
     background: #fff;
-    position: fixed;
+    /*position: fixed;*/
     width: 100%;
     z-index: 90;
 	padding: 22px 0 0 0;
@@ -71,39 +77,44 @@ header .wrapper {
 	max-width: 1550px;
 	padding: 0 30px;
 }
-.button {
-    -webkit-appearance: none;
-    border: 0;
-    font-size: 16px;
-	font-weight: 600;
-    text-align: center;
-    display: block;
-    background: var(--highlight-grad);
-    color: #fff;
-    border-radius: 25px;
-	box-shadow: 0 15px 20px -4px var(--highlight);
-    padding: 10px 0;
-    width: 250px;
-    height: 42px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 30px;
-    transition: box-shadow 0.5s;
-    cursor: pointer;
+.hero .button {
+	margin-top: 60px;
+}
 
+.button {
+	-webkit-appearance: none;
+	border: 0;
+	font-size: 18px;
+	font-weight: 600;
+	text-align: center;
+	display: block;
+	background: var(--highlight-grad);
+	color: #fff;
+	border-radius: 25px;
+	box-shadow: 0 15px 20px -10px var(--highlight);
+	padding: 12px 0;
+	width: 250px;
+	/* height: 42px; */
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 30px;
+	transition: box-shadow 0.5s;
+	cursor: pointer;
 }
 
 .button:hover {
+	color: #fff;
 	box-shadow: 0 0px 15px var(--highlight2);
 }
 .logo {
-	width: 175px;
+	width: 150px;
+	margin-top: -20px;
 }
 .desk-menu {
 	float: right;
     font-size: 24px;
     display: inline-block;
-    margin: 6px 25px 0 0;
+    margin: 0px 25px 0 0;
 
 }
 .desk-menu .button {
@@ -126,7 +137,6 @@ header .wrapper {
 	font-size: 23px;
 	display: inline-block;
 	padding: 0px 10px;
-	height: 57px;
 }
 .submenu {
 	position: absolute;
@@ -154,7 +164,7 @@ header .wrapper {
 }
 .submenu li:hover {
 
-	color: #005abb;
+	color: var(--highlight);
 }
 .submenu li.active {
 	border-bottom: 4px solid var(--highlight);
@@ -183,7 +193,7 @@ header .wrapper {
 }
 .desk-menu a, .desk-menu a:visited {color: var(--main-color); transition: 0.5s color; }
 .desk-menu a:hover, .desk-menu li:hover {
-	color: #005abb;
+	color: var(--highlight);
 	text-decoration: none;
 }
 
@@ -192,7 +202,7 @@ header .wrapper {
 .desk-menu > li.active:after {
 	content: '';
     position: absolute;
-    bottom: 0;
+    bottom: -30px;
     width: calc(100% - 20px);
 	background: var(--highlight);
     height: 4px;
@@ -214,10 +224,13 @@ a {
 	text-decoration: none;
 }
 .hero {
-	background: url(../img/herobanner.jpg);
+	width: 100%;
+	height: calc(100vh - 170px);
+}
+.main .hero {
+	background: linear-gradient(to right, var(--main-color), #00000080), url(../img/herobanner.jpg);
 	background-size: cover;
-	background-position: center;
-	height: 100vh;
+	background-position: top;
 	display: block;
 }
 .hero .wrapper {
@@ -225,14 +238,25 @@ a {
 	height: 100%;
 
 }
+
 .hero .wrapper > div {
 	text-align: center;
 	margin: auto;
-	height: 50%; width: 80%;
+	height: fit-content;
+	max-width: 720px;
+	padding: 0 15px;
 }
+
 .hero h1 {
 	color: #fff;
+	margin: auto;
+	max-width: 720px;
+}
 
+.hero .wrapper h3 {
+	margin-top: 20px;
+	color: var(--highlight2);
+	text-shadow: 0 9px 25px #1618175e;
 }
 .iconsection {
 	display: flex;
@@ -244,8 +268,8 @@ a {
     white-space: normal;
 }
 .howWorks > .iconsection {
-	margin-top: 100px;
-	margin-bottom: 70px;
+	/*margin-top: 100px;*/
+	/*margin-bottom: 70px;*/
 }
 .iconbox {
 	position: relative;
@@ -264,7 +288,8 @@ a {
 .iconbox span {
 	display: block;
 	margin-bottom: 15px;
-	font-weight: 900;
+	font-weight: 700;
+	font-size: 19px;
 
 
 }
@@ -339,6 +364,9 @@ h2.center.dark {
 }
 .halfblock h2 {
 	margin-bottom: 30px;
+	color: transparent;
+	background: var(--highlight-grad);
+	-webkit-background-clip: text;
 }
 .halfblock form {
 	margin: auto 0;
@@ -399,6 +427,7 @@ footer {
 .rightblock {
 	text-align: right;
     right: 0;
+	font-weight: 600;
 }
 footer .wrapper {
 	position: relative;
@@ -413,15 +442,16 @@ footer .rightblock a {
 	margin-left: 15px;
 	display: inline-block;
 	font-size: 14px;
+
 }
 footer a {
-	color: #fff;
+	color: var(--highlight);
 }
 footer a:visited {
-	color: #fff;
+	color: var(--highlight);
 }
 .copyright {
-	font-weight: 600;
+	font-weight: 700;
 	color: #fff;
 	font-size: 12px;
 	position: absolute;
@@ -558,11 +588,18 @@ footer a:visited {
     text-align: center;
 }
 .darker {
-	background: var(--darker);
+	background: var(--main-color);
 	color: #fff;
 }
+
+.halfblock.right h2 {
+	color: var(--main-color);
+}
 .darker h3 {
-	color: var(--highlight2);
+	color: transparent;
+	background: var(--highlight-grad);
+	-webkit-background-clip: text;
+	margin-bottom: 30px;
 }
 
 
@@ -579,7 +616,7 @@ footer a:visited {
     height: max-content;
     width: 100%;
     padding: 30px 0;
-    background: #003d71c2;
+    background: var(--main-color);
 }
 
 .contact .hero > div h1{
@@ -729,7 +766,6 @@ body.contact > section:nth-child(5) {
 .services .hero {
     background: linear-gradient( 0deg, #ffffffe3, #ffffffe3), url(../img/digital.jpg) center no-repeat;
     overflow: hidden;
-    height: 100vh;
     display: flex;
     background-size: cover;
 }
@@ -752,7 +788,7 @@ body.contact > section:nth-child(5) {
     position: absolute;
     left: 0%;
     width: 50%;
-    background: #0b518c;
+    background: var(--main-color);
     background-size: cover;
     height: 386px;
 }
@@ -1213,7 +1249,7 @@ body.contact > section:nth-child(5) {
 .ppc .partner > ul {
 	list-style: none;
 	font-size: 18px;
-	font-weight: 900;
+	font-weight: 700;
 	position: relative;
 }
 .ppc .partner ol {
@@ -1225,7 +1261,7 @@ body.contact > section:nth-child(5) {
 	margin: 8px 0;
 	line-height: 1;
 	color: #0074be;
-	font-weight: 600;
+	font-weight: 700;
 }
 
 
