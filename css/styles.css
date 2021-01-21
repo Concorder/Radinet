@@ -3,10 +3,10 @@
 
 :root{
 --main-color: #292929;
---highlight: #01b3f3;
+--highlight: #00c2ff;
 --highlight2: #01f6e4;
 --highlight-grad:linear-gradient(to right, var(--highlight2), var(--highlight)) ;
---darker: #242424;
+--darker: #202025;
 }
 *{
 -webkit-tap-highlight-color: transparent;
@@ -253,9 +253,11 @@ a {
 	max-width: 720px;
 }
 
-.hero .wrapper h3 {
+.hero h3 {
 	margin-top: 20px;
-	color: var(--highlight2);
+	color: transparent;
+	background: var(--highlight-grad);
+	-webkit-background-clip: text;
 	text-shadow: 0 9px 25px #1618175e;
 }
 .iconsection {
@@ -298,6 +300,13 @@ a {
 	margin: 20px auto;
 	height: 92px;
 }
+.iconbox svg {
+	fill: var(--highlight);
+	display: block;
+	margin: 20px auto;
+	height: 92px;
+	width: auto;
+}
 
 
 
@@ -333,7 +342,7 @@ h2.center.dark {
 
 .iconbox p {
 	white-space: normal;
-    text-align: left;
+    text-align: center;
 }
 .third_block, .halfblock { position: relative; height: 600px; }
 
@@ -467,9 +476,9 @@ footer a:visited {
 
 
 .about .hero {
-	background: linear-gradient( 0deg, #003d71e8, #003d71e8), url(../img/hero_about.jpg);
+	background: linear-gradient( to right, var(--main-color), #00000080), url(../img/hero_about.jpg);
 	overflow: hidden;
-	height: 100vh;
+
 	display: flex;
 }
 
@@ -488,7 +497,7 @@ footer a:visited {
     position: absolute;
     right: 0%;
     width: 50%;
-    background: #0b518c;
+    background: var(--highlight);
     background-size: cover;
     height: 386px;
 }
@@ -608,7 +617,10 @@ footer a:visited {
 
 .contact .hero {
 	display: flex;
-	background: url(../img/contact_hero.jpg);
+	background: linear-gradient(to right, var(--main-color), #00000080), url(../img/contact_hero.jpg) no-repeat;
+	background-position: bottom;
+	background-size: cover;
+
 }
 .contact .hero > div {
     text-align: center;
@@ -616,7 +628,6 @@ footer a:visited {
     height: max-content;
     width: 100%;
     padding: 30px 0;
-    background: var(--main-color);
 }
 
 .contact .hero > div h1{
