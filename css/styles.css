@@ -125,7 +125,7 @@ header .wrapper {
 	color: #fff;
 	font-size: 14px;
 	height: unset;
-	font-weight: 400;
+	font-weight: 600;
 }
 .desk-menu .button:visited {
 	color: #fff;
@@ -376,6 +376,10 @@ h2.center.dark {
 	color: transparent;
 	background: var(--highlight-grad);
 	-webkit-background-clip: text;
+
+}
+.half_info h2 {
+	width: fit-content;
 }
 .halfblock form {
 	margin: auto 0;
@@ -471,6 +475,9 @@ footer a:visited {
 }
 [class*="mob"] {
     display: none !important;
+}
+.hero img {
+	box-shadow: 0 23px 15px -14px #00000069;
 }
 /*ABOUT================================*/
 
@@ -570,7 +577,7 @@ footer a:visited {
 
 }
 .iconsection.leaders .iconbox  span:nth-child(3) {
-	color: #0074be;
+	color: var(--highlight);
 }
 
 .about .halfblock .img {
@@ -614,7 +621,9 @@ footer a:visited {
 
 
 /*CONTACT=========================*/
-
+html {
+	scroll-behavior: smooth;
+}
 .contact .hero {
 	display: flex;
 	background: linear-gradient(to right, var(--main-color), #00000080), url(../img/contact_hero.jpg) no-repeat;
@@ -737,7 +746,7 @@ body.contact > section:nth-child(5) {
 	padding: 70px 30px 180px;
 	margin: 30px 20px;
 	position: relative;
-	box-shadow: 0 13px 12px -5px #0000007a;
+
 }
 .partner > * {
 	color: #fff;
@@ -846,40 +855,34 @@ body.contact > section:nth-child(5) {
 	height:100%;
 }
 
-.services .halfblock:nth-child(3) .img {
+.services .halfblock:nth-child(4) .img {
     
     background: url(../img/social_media.jpg) center no-repeat;
     background-size: cover;
 
 }
-.services .halfblock:nth-child(4) .img {
+.services .halfblock:nth-child(5) .img {
     
     background: url(../img/stats.jpg) center no-repeat;
     background-size: cover;
 
 }
 
-.services .halfblock:nth-child(5) .img {
-  
-    background: url(../img/seo.jpg)center no-repeat;
-      background-size: cover;
-
-}
-
-
-.services .halfblock:nth-child(5) .img {
-  
-    background: url(../img/seo.jpg)center no-repeat;
-      background-size: cover;
-
-}
 .services .halfblock:nth-child(6) .img {
+  
+    background: url(../img/seo.jpg)center no-repeat;
+      background-size: cover;
+
+}
+
+
+.services .halfblock:nth-child(7) .img {
    
     background: url(../img/design.jpg) center no-repeat;
      background-size: cover;
 
 }
-.services .halfblock:nth-child(7) .img {
+.services .halfblock:nth-child(8) .img {
    
     background: url(../img/webdev.jpg) center no-repeat;
      background-size: cover;
@@ -1184,7 +1187,7 @@ body.contact > section:nth-child(5) {
 
 }
 .iconsection.leaders .iconbox  span:nth-child(3) {
-	color: #0074be;
+	color: var(--highlight);
 }
 
 .ppc .halfblock .img {
@@ -1239,7 +1242,6 @@ body.contact > section:nth-child(5) {
 	padding: 0px 30px 125px;
 	margin: 30px 20px;
 	position: relative;
-	box-shadow: 0 5px 20px -5px #0000007a;
 	height: fit-content;
 }
 .ppc .partner > * {
@@ -1271,7 +1273,7 @@ body.contact > section:nth-child(5) {
 .ppc .partner ol > li {
 	margin: 8px 0;
 	line-height: 1;
-	color: #0074be;
+	color: var(--highlight);
 	font-weight: 700;
 }
 
@@ -1301,7 +1303,7 @@ body.contact > section:nth-child(5) {
 	font-weight: 600;
 }
 .price1 {
-	background: #0074be;
+	background: var(--highlight);
 }
 .price2 {
 	background: var(--main-color);
@@ -1400,7 +1402,7 @@ Careers*/
 
 }
 /*.position_box li{*/
-/*	color: #0074be;*/
+/*	color: var(--highlight);*/
 /*	list-style: circle;*/
 /*	margin-left: 20px;*/
 /*}*/
