@@ -512,6 +512,7 @@ footer a:visited {
 	position: absolute;
     left: 30px;
     top: -30px;
+	height: 100%;
 }
 
 .about .hero .about_text {
@@ -824,6 +825,7 @@ body.contact > section:nth-child(5) {
     position: absolute;
     right: 30px;
     top: -30px;
+	height: 100%;
 }
 .services .halfblock {
     position: relative;
@@ -863,7 +865,7 @@ body.contact > section:nth-child(5) {
 }
 .services .halfblock:nth-child(5) .img {
     
-    background: url(../img/stats.jpg) center no-repeat;
+    background: url(../img/digital2.jpg) center no-repeat;
     background-size: cover;
 
 }
