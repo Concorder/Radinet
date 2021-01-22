@@ -3,7 +3,7 @@
 
 :root{
 --main-color: #292929;
---highlight: #00c2ff;
+--highlight: #01b3f3;
 --highlight2: #01f6e4;
 --highlight-grad:linear-gradient(to right, var(--highlight2), var(--highlight)) ;
 --darker: #202025;
@@ -148,7 +148,7 @@ header .wrapper {
 }
 .submenu a {
 	display: block ;
-	padding: 10px 0 10px 10px;
+	padding: 10px;
 }
 .submenu li {
 	padding: 0;
@@ -479,6 +479,9 @@ footer a:visited {
 .hero img {
 	box-shadow: 0 23px 15px -14px #00000069;
 }
+.hero .img {
+	background: var(--highlight);
+}
 /*ABOUT================================*/
 
 
@@ -504,7 +507,7 @@ footer a:visited {
     position: absolute;
     right: 0%;
     width: 50%;
-    background: var(--highlight);
+
     background-size: cover;
     height: 386px;
 }
@@ -797,11 +800,17 @@ body.contact > section:nth-child(5) {
 }
 .services .hero h1 {
 	color: var(--main-color);
+	white-space: nowrap;
+}
+.services .hero h3 {
+	color: var(--highlight);
+	text-shadow: none;
 }
 .services .about_text p {
     margin-top: 30px;
     width: 85%;
     color: var(--main-color);
+	font-weight: 600;
 }
 
 .services .hero .img {
@@ -809,7 +818,7 @@ body.contact > section:nth-child(5) {
     position: absolute;
     left: 0%;
     width: 50%;
-    background: var(--main-color);
+
     background-size: cover;
     height: 386px;
 }
@@ -872,7 +881,7 @@ body.contact > section:nth-child(5) {
 
 .services .halfblock:nth-child(6) .img {
   
-    background: url(../img/seo.jpg)center no-repeat;
+    background: url(../img/design.jpg )center no-repeat;
       background-size: cover;
 
 }
@@ -880,13 +889,13 @@ body.contact > section:nth-child(5) {
 
 .services .halfblock:nth-child(7) .img {
    
-    background: url(../img/design.jpg) center no-repeat;
+    background: url( ../img/webdev.jpg) center no-repeat;
      background-size: cover;
 
 }
 .services .halfblock:nth-child(8) .img {
    
-    background: url(../img/webdev.jpg) center no-repeat;
+    background: url(../img/seo.jpg) center no-repeat;
      background-size: cover;
 }
 
@@ -1061,7 +1070,7 @@ body.contact > section:nth-child(5) {
 	position: absolute;
 	right: 0%;
 	width: 50%;
-	background: var(--main-color);
+
 	background-size: cover;
 	height: 450px;
 }
@@ -1347,7 +1356,7 @@ Careers*/
 	position: absolute;
 	right: 0%;
 	width: 50%;
-	background: var(--main-color);
+
 	background-size: cover;
 	height: 450px;
 }
