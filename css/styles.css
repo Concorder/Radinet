@@ -134,7 +134,7 @@ header .wrapper {
 	position: relative;
 	font-weight: 700;
 	cursor: pointer;
-	font-size: 23px;
+	font-size: 19px;
 	display: inline-block;
 	padding: 0px 10px;
 }
@@ -202,7 +202,7 @@ header .wrapper {
 .desk-menu > li.active:after {
 	content: '';
     position: absolute;
-    bottom: -30px;
+    bottom: -31px;
     width: calc(100% - 20px);
 	background: var(--highlight);
     height: 3px;
@@ -367,6 +367,9 @@ h2.center.dark {
     background-size: cover;
     height: 600px;
 
+}
+.halfblock img {
+	height: 100%;
 }
 .halfblock .wrapper {
 	height: 600px;
