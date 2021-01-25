@@ -205,7 +205,7 @@ header .wrapper {
     bottom: -30px;
     width: calc(100% - 20px);
 	background: var(--highlight);
-    height: 4px;
+    height: 3px;
     left:10px;
 	pointer-events: none;
 }
@@ -1251,8 +1251,8 @@ body.contact > section:nth-child(5) {
 	white-space: nowrap;
 	background: #fff;
 	width: calc(100% / 2 - 40px);
-	padding: 0px 30px 125px;
-	margin: 30px 20px;
+	padding: 0px 30px 0px;
+	margin: 60px 20px;
 	position: relative;
 	height: fit-content;
 }
@@ -1276,52 +1276,84 @@ body.contact > section:nth-child(5) {
 	font-size: 18px;
 	font-weight: 700;
 	position: relative;
+	width: fit-content;
+	margin: auto;
 }
 .ppc .partner ol {
-	list-style: circle;
-	font-size: 14px;
+	list-style: disc;
+	font-size: 16px;
 	font-weight: 400;
+	width: fit-content;
+	margin: auto;
 }
 .ppc .partner ol > li {
 	margin: 8px 0;
 	line-height: 1;
 	color: var(--highlight);
-	font-weight: 700;
+
 }
 
 
 
 .price_box {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
+text-align: left;
 
 
 }
-.price_box span {
+.numbers {
 	display: block;
 }
-.price_box .button {
+.price_box .text {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	position: relative;
+}
+.price_box .text:after {
+	content: '';
 	position: absolute;
-	bottom: -70px;
+	bottom: -16px;
 	left: 50%;
 	transform: translate(-50%, 0);
+	height: 2px;
+	width: 40px;
+	background: var(--highlight);
+}
+
+.price_box .button {
+
+}
+.price_box .price {
+	font-size: 19px;
+	font-weight: 900;
+	margin-bottom: 20px;
+	display: inline-block;
 }
 .price1, .price2 {
 	padding: 10px 0;
 	text-align: center;
-	color: #fff;
+	color: var(--main-color);
 	font-weight: 600;
+	width: fit-content;
+	margin: auto;
+	text-align: left;
 }
-.price1 {
-	background: var(--highlight);
-}
-.price2 {
-	background: var(--main-color);
-}
+
+.partner h3 span {
+text-transform: none}
 .partner .numbers {
-	font-size: 24px;
+	font-size: 14px;
+	color: var(--highlight);
+	font-weight: 400;
+}
+
+.partner .numbers span {
+	color: var(--main-color);
+	font-size: 19px;
+	display: block;
 }
 
 /*
