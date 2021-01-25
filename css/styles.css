@@ -207,6 +207,7 @@ header .wrapper {
 	background: var(--highlight);
     height: 4px;
     left:10px;
+	pointer-events: none;
 }
 .social {
 	float: right;
@@ -1249,7 +1250,7 @@ body.contact > section:nth-child(5) {
 	display: inline-block;
 	white-space: nowrap;
 	background: #fff;
-	width: calc(100% / 3 - 40px);
+	width: calc(100% / 2 - 40px);
 	padding: 0px 30px 125px;
 	margin: 30px 20px;
 	position: relative;
