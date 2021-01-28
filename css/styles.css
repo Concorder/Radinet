@@ -492,7 +492,6 @@ footer a:visited {
 .about .hero {
 	background: linear-gradient( to right, var(--main-color), #00000080), url(../img/hero_about.jpg);
 	overflow: hidden;
-
 	display: flex;
 }
 
@@ -1000,14 +999,12 @@ body.contact > section:nth-child(5) {
 /*========== TERMS ==========*/
 
 .terms-section {
-    margin-top: 85px;
     padding: 70px 0;
 }
 .terms-section .wrapper {
     max-width: 600px;
 }
 .terms-section h1 {
-    margin-top: 50px;
     margin-bottom: 30px;
     text-align: center;
 

@@ -83,7 +83,7 @@
 		width: calc(100% - 40px);
 		margin: 0 auto;
 		overflow: hidden;
-		top: 300px;
+		top: 215px;
 		transform: translateY(-50%);
 		left: 0;
 		right: 0;
@@ -239,7 +239,7 @@
 
 	}
 	.third_block {
-		background: linear-gradient( 0deg, #003d71e8, #003d71e8), url(../img/23_image.jpg) no-repeat;
+		background: linear-gradient( 0deg,#000000c7,#000000c7), url(../img/23_image.jpg) no-repeat;
 		background-size: cover;
 		color: #fff;
 		height: 630px;
@@ -256,8 +256,9 @@
 	.hero h1{
 		font-size: 28px;
 	}
-	.hero {height: 100vh;
-		padding: 155px 0 70px;
+	.hero {
+		height: 100vh;
+		padding: 70px 0 70px;
 	}
 
 	body > section:nth-child(5) > .iconsection {
@@ -274,7 +275,7 @@
 	}
 	.halfblock {
 		height: 100vh;
-		background: linear-gradient( 0deg, #003d71e8, #003d71e8), url(../img/23_image.jpg) no-repeat;
+		background: linear-gradient( 0deg,#000000c7,#000000c7), url(../img/23_image.jpg) no-repeat;
 		background-size: cover;
 		background-position: right;
 	}
@@ -374,7 +375,7 @@ display: block;
 }
 .halfblock {
     height: 100vh;
-    background: linear-gradient( 0deg, #003d71e8, #003d71e8), url(../img/team.jpg) no-repeat;
+    background: linear-gradient( 0deg,#000000c7,#000000c7), url(../img/team.jpg) no-repeat;
     background-size: cover;
     background-position: right;
 }

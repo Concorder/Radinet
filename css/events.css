@@ -35,7 +35,7 @@
     padding-bottom: 0;
 }
 .charity_content {
-    background: linear-gradient( 0deg, #003d71e8, #003d71e8), url(../img/team1.jpg);
+    background: linear-gradient( 0deg,#000000c7,#000000c7), url(../img/team1.jpg);
     height: 840px;
     background-size: auto 100%;
     background-position: right;
@@ -273,7 +273,7 @@
     -ms-grid-row: 50;
     -ms-grid-row-span: 101;
 
-    background: linear-gradient( 0deg, #003d71e8, #003d71e8), url(../img/team3.jpg) center ;
+    background: linear-gradient( 0deg,#000000c7,#000000c7), url(../img/team3.jpg) center ;
     background-size: auto 100%;
     padding: 70px 50px 50px 60px;
     font-size: 16px;
@@ -310,7 +310,7 @@
     min-height: 655px;
 }
 .vacancy_content_description{
-    background: linear-gradient( 0deg, #003d71e8, #003d71e8), url(../img/team2.jpg);
+    background: linear-gradient( 0deg,#000000c7,#000000c7), url(../img/team2.jpg);
     background-size: auto 100%;
     background-position: left;
     color: #fff;
